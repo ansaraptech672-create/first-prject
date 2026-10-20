@@ -1,10 +1,15 @@
 
 import streamlit as st
 from groq import Groq
+import os
 
+from dotenv import load_dotenv
 # -----------------------------
 # Page configuration
 # -----------------------------
+
+load_dotenv()
+
 st.set_page_config(
     page_title="Groq AI Chatbot",
     page_icon="🤖",
@@ -37,7 +42,7 @@ if "client" not in st.session_state:
     st.session_state.client = Groq(api_key=api_key)
 
 # Choose a model supported by your Groq account
-MODEL = "llama-3.3-70b-versatile"
+MODEL = "openai/gpt-oss-120b"
 
 # -----------------------------
 # Initialize conversation
