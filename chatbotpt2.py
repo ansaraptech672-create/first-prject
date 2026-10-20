@@ -8,7 +8,7 @@ import os
 # Load environment variables from .env
 load_dotenv()
 
-API_KEY =  os.getenv("GEMINI_API_KEY")
+API_KEY =  st.secrets["GEMINI_API_KEY"]
 MODEL = "gemini-3.5-flash"
 
 st.set_page_config(
