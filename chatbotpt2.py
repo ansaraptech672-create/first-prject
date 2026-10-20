@@ -13,7 +13,7 @@ MODEL = "gemini-3.5-flash"
 
 st.set_page_config(
     page_title="Gemini AI Chatbot",
-    page_icon="ðŸ¤–"
+    page_icon="ansargenai"
 )
 
 st.title("ðŸ¤– Gemini AI Chatbot")
